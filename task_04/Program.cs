@@ -1,12 +1,12 @@
 ﻿Console.WriteLine("Необходимо ввести 3-и числа, среди которых найдем максимальное");
-List<int> numbers = readNumbers(3);
-int maxNumber = getMax(numbers);
+List<int> numbers = ReadNumbers(3);
+int maxNumber = GetMax(numbers);
 
 Console.WriteLine($"Максимальное число: {maxNumber}");
 
 
 
-List<int> readNumbers(uint count)
+List<int> ReadNumbers(uint count)
 {
     List<int> list = new List<int>();
 
@@ -21,7 +21,7 @@ List<int> readNumbers(uint count)
     return list;
 }
 
-int getMax(List<int> numbers)
+int GetMax(List<int> numbers)
 {
     int maxNumber = numbers[0];
 
