@@ -2,30 +2,37 @@
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
 
 
-Console.WriteLine("Необходимо ввести массив из 8 чисел");
-int[] userList = ReadNumbers(8);
+int length = Propmpt("Введите длину массива:");
 
-PrintArray(userList);
+int[] randomList = GenerateList(length);
+
+PrintList(randomList);
 
 
+int Propmpt(string message)
+{
+    Console.Write(message);
+    string input = Console.ReadLine();
+    int result = Convert.ToInt32(input);
+    return result;
+}
 
-int[] ReadNumbers(uint count)
+
+int[] GenerateList(int count)
 {
     int[] list = new int[count];
+    Random random = new Random();
 
     for (int index = 0; index < count; index++)
     {
-        Console.Write($"Введите {index + 1}: ");
-
-        var number = Convert.ToInt32(Console.ReadLine());
-        list[index] = number;
+        list[index] = random.Next(0, 100);
     }
 
     return list;
 }
 
 
-void PrintArray(int[] list)
+void PrintList(int[] list)
 {
     string joinedList = string.Join(",", list);
 
