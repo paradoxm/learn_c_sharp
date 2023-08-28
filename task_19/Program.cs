@@ -24,15 +24,7 @@ else
 
 bool IsValidNumber(int num)
 {
-    int digitCount = 0;
-
-    while (num != 0)
-    {
-        num /= 10;
-        digitCount++;
-    }
-
-    return digitCount == 5;
+    return number >= 10000 && number <= 99999;;
 }
 
 bool IsPalindrome(int num)
