@@ -24,7 +24,7 @@
 
     public static class List
     {
-        public static void Print(int[] list, string delimeter = ",")
+        public static void PrintInt(int[] list, string delimeter = ",")
         {
             string joinedList = string.Join(delimeter, list);
 

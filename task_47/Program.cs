@@ -15,7 +15,7 @@ if (rowCount > 0 && colCount > 0)
 {
     double[,] randomMatrix = Matrix.GenerateDouble(rowCount, colCount, -10, 10);
     double[,] roundedMatrix = Matrix.RoundElements(randomMatrix, 1);
-    Matrix.Print(roundedMatrix);
+    Matrix.PrintDouble(roundedMatrix);
 }
 else
 {

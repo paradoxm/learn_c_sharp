@@ -7,7 +7,7 @@ using LearnCSharpUtils;
 int length = Number.Propmpt("Введите длину массива:");
 
 int[] randomList = List.GenerateInt(length, 1, 100);
-List.Print(randomList);
+List.PrintInt(randomList);
 
 int sumOddPosition = SumOddPosition(randomList);
 
