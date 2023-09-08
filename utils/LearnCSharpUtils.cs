@@ -27,7 +27,12 @@
         public static void PrintInt(int[] list, string delimeter = ",")
         {
             string joinedList = string.Join(delimeter, list);
+            Console.WriteLine($"[{joinedList}]");
+        }
 
+        public static void PrintDouble(double[] list)
+        {
+            string joinedList = string.Join(", ", list);
             Console.WriteLine($"[{joinedList}]");
         }
 
