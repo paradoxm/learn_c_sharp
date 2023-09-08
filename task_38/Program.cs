@@ -17,7 +17,9 @@ if (length > 0)
     double result = maxNumber - minNumber;
 
     Console.WriteLine($"Разница между максимальным ({maxNumber}) и минимальным ({minNumber}) элементами массива: {result}");
-} else {
+}
+else
+{
     Console.WriteLine($"Массив пустой.");
 }
 

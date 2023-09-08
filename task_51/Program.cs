@@ -9,12 +9,11 @@
 
 // Сумма элементов главной диагонали: 1+9+2 = 12
 
-
 int rowCount = Propmpt("Введите количество строк массива:");
 int colCount = Propmpt("Введите количество колонок массива:");
 
 int[,] randomList = GenerateList(rowCount, colCount);
-PrintList(randomList);
+PrintMatrix(randomList);
 Console.WriteLine();
 
 int[] mainElements = SumMainDiagonal(randomList);
@@ -77,7 +76,7 @@ int SumList(int[] list)
 }
 
 
-void PrintList(int[,] matrix)
+void PrintMatrix(int[,] matrix)
 {
 
     for (int i = 0; i < matrix.GetLength(0); i++)
