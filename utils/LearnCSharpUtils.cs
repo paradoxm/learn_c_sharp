@@ -138,7 +138,19 @@
             return matrix;
         }
 
-        public static void Print(double[,] matrix)
+        public static void PrintInt(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write($"{matrix[i, j],6}");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void PrintDouble(double[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
