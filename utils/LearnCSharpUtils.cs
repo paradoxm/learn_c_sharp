@@ -181,6 +181,37 @@
 
             return copy;
         }
+
+        public static int[,] CopyInt(int[,] matrix)
+        {
+            int[,] copy = new int[matrix.GetLength(0), matrix.GetLength(1)];
+
+            for (int i = 0; i < copy.GetLength(0); i++)
+            {
+                for (int j = 0; j < copy.GetLength(1); j++)
+                {
+                    copy[i, j] = matrix[i, j];
+                }
+            }
+
+            return copy;
+        }
+
+        public static int[] ToListInt(int[,] matrix)
+        {
+            int[] list = new int[matrix.GetLength(0) * matrix.GetLength(1)];
+            int count = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    list[count++] = matrix[i, j];
+                }
+            }
+
+            return list;
+        }
     }
 
 }
