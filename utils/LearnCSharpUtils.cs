@@ -105,6 +105,19 @@
 
             return minNumber;
         }
+
+
+        public static int[] CopyInt(int[] list)
+        {
+            int[] result = new int[list.Length];
+
+            for (int i = 0; i < list.Length; i++)
+            {
+                result[i] = list[i];
+            }
+
+            return result;
+        }
     }
 
     public static class Matrix
@@ -211,6 +224,27 @@
             }
 
             return list;
+        }
+
+        public static int[] GetRowInt(int[,] matrix, int rowIndex)
+        {
+            int colCount = matrix.GetLength(1);
+            int[] row = new int[colCount];
+
+            for (int i = 0; i < colCount; i++)
+            {
+                row[i] = matrix[rowIndex, i];
+            }
+
+            return row;
+        }
+
+        public static void SetRowInt(int[,] matrix, int rowIndex, int[] row)
+        {
+            for (int i = 0; i < row.Length; i++)
+            {
+                matrix[rowIndex, i] = row[i];
+            }
         }
     }
 
