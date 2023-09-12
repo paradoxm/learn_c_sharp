@@ -25,7 +25,7 @@ Console.WriteLine($"Сумма элементов от {min} до {max} равн
 
 bool isValid(int from, int to)
 {
-    if (numberFrom < 1 || numberTo < 0)
+    if (from < 1 || to < 0)
     {
         Console.WriteLine("Ввели некорректные числа.");
         return false;
