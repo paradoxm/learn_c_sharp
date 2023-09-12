@@ -34,6 +34,6 @@ void NumturalNumbers(int from, int to)
 {
     if (to < from) return;
 
-    NumturalNumbers(from, to - 1);task_65
+    NumturalNumbers(from, to - 1);
     Console.Write($"{to} ");
 }
